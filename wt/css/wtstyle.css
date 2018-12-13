@@ -1,0 +1,427 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 微软雅黑;
+}
+ul,li{
+    margin: 0;
+    padding: 0;
+    list-style:none;
+}
+i{
+    margin: 0;
+    padding: 0;
+    font-style: normal;
+}
+h1{
+    margin: 0;
+    padding: 0;
+}
+/**
+-----------------------顶部菜单--------------------------
+ */
+.topbar{
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    top:0px;
+    left: 0px;
+    z-index:999;
+    background-color: #FFF;
+}
+.topbar-contain{
+    margin: 0 auto;
+    width: 1280px;
+    height: 100px;
+}
+.wt-logo{
+    float: left;
+}
+.wt-logo,.top-nav{
+    height: 100px;
+    line-height: 100px;
+}
+.top-nav{
+    float: right;
+}
+.wt-logo{
+    width: 200px;
+}
+.wt-logo img{
+    vertical-align: middle;
+}
+.top-nav ul:after{
+    content: "";
+    clear: both;
+}
+.top-nav ul li{
+    float: left;
+}
+.top-nav a{
+    display: block;
+    color: #333;
+    font-weight: 500;
+    font-size: 20px;
+    height: 100px;
+    text-decoration: none;
+    padding: 0 20px;
+
+}
+.top-nav a:hover{
+    background-color: blue;
+    color: #FFF;
+}
+/**
+-----------------------轮播图--------------------------
+ */
+.header{
+    width: 100%;
+    height: 660px;
+    position: relative;
+    overflow: hidden;
+}
+.header-contain{
+    width: 400%;
+    position: absolute;
+}
+.header-contain:after{
+    content: "";
+    clear: both;
+}
+.header-item{
+    height: 660px;
+    float: left;
+    width: 25%;
+
+}
+.ileft,.iright{
+    font-size: 32px;
+    height: 40px;
+    line-height: 40px;
+    font-color: #CCC;
+    background-color: #FFF;
+    opacity: 0.2;
+    padding: 0 10px;
+    cursor: pointer;
+}
+.ileft{
+    position: absolute;
+    top: 50%;
+    left: 0;
+}
+.iright{
+    position: absolute;
+    top: 50%;
+    right: 0;
+}
+/**
+-----------------------关于我们--------------------------
+ */
+.aboutwe{
+    margin: 0 auto;
+    width: 1280px;
+}
+.aboutwe-top{
+    margin-top: 130px;
+    font-size: 18px;
+    height: 50px;
+    text-align: center;
+}
+.aboutwe-top span{
+    margin-right: 150px;
+    color:#666;
+    cursor: pointer;
+}
+.aboutwe-active{
+    font-weight: 700;
+    color: black;
+    border-bottom:2px solid black;
+    padding-bottom: 20px;
+}
+.aboutwe-title{
+    color: #0176D9;
+    font-size: 20px;
+    /*margin-top: 80px;*/
+}
+.aboutwe-body{
+    width: 500px;
+    float: left;
+}
+.aboutwe-content{
+    font-size: 14px;
+    margin-top: 30px;
+    line-height: 30px;
+    letter-spacing: 2px;
+    /*text-indent: 2em;*/
+}
+.aboutwe-content a{
+    color: #0176D9;
+    text-decoration: none;
+}
+.aboutwe-logo{
+    float: left;
+    margin-left: 100px;
+    margin-top: 50px;
+}
+.aboutwe-logo img{
+    width: 500px;
+}
+.displayinfo{
+    display: none;
+}
+.company-info{
+    margin: 100px auto 0 auto;
+    /*text-align: center;*/
+}
+.company-info:after{
+    content: "";
+    clear: both;
+}
+.qywh{
+    float: left;
+    width: 500px;
+    height: 600px;
+    margin-right: 100px;
+}
+.qywh img{
+    width: 100%;
+}
+.qywh-info{
+    width: 500px;
+}
+.qywh-title{
+    color: #0176D9;
+    font-size: 20px;
+    margin: 40px 0 20px 0;
+}
+/**
+-----------------------版权运营--------------------------
+ */
+.copyright{
+    width: 100%;
+    background: url("../img/123.jpg") no-repeat center;
+    background-size: cover;
+    height: 900px;
+    margin-top: 200px;
+}
+.copyright-body{
+    width: 1280px;
+    margin: 0 auto;
+    color: #FFF;
+}
+
+.copyright-info{
+    margin-top: 100px;
+}
+.copyright-row1{
+}
+.copyright-row1 div{
+    width: 60px;
+    padding-top: 30px;
+    border-bottom: solid 5px #FFF;
+}
+.copyright-row2{
+    margin: 50px 0 40px 0;
+}
+.copyright-bottom{
+    margin-top: 100px;
+}
+.copyright-img{
+    float: left;
+    width: 360px;
+    height: 270px;
+    margin-right: 50px;
+}
+.copyright-imgtitle{
+    display: none;
+    width: 100%;
+    height: 100%;
+    background:rgba(0,0,0,0.8);
+    color: #FFF;
+    font-size: 14px;
+}
+.copyright-imgtitle div{
+    width: 300px;
+    margin-left: 30px;
+}
+.bqtitle{
+    padding-top: 70px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 16px;
+}
+.bqcontent{
+    font-size: 13px;
+}
+/**
+-----------------------移动中心--------------------------
+ */
+.apps{
+    background-color: #f4f4f4;
+}
+
+.appscotain{
+    width: 1280px;
+    margin: 0 auto;
+}
+.appscotain-row1{
+    margin-top: 100px;
+}
+.appscotain-row1 div{
+    width: 60px;
+    padding-top: 50px;
+    margin-bottom: 30px;
+    border-bottom: solid 5px black;
+}
+.appscotain-row2 img{
+    width:100%;
+    margin-bottom: 100px;
+}
+/**
+-----------------------新闻中心--------------------------
+ */
+.newscontain-row2{
+    margin-top: 70px;
+}
+.newscontain-row2:after{
+    content: "";
+    clear: both;
+}
+.news-info{
+    width: 280px;
+    background-color: #f4f4f4;
+    float: left;
+    margin-right: 40px;
+}
+.news-info img{
+    max-width: 100%;
+    height: auto;
+}
+.news-infocontent{
+    width: 230px;
+    margin: 0 auto;
+}
+.news-infotitle{
+    font-size: 16px;
+    font-weight: bold;
+    height: 40px;
+    margin-top: 10px;
+}
+.news-infodate{
+    font-size: 14px;
+    color: #202425;
+    margin-top: 10px;
+    padding-bottom: 20px;
+}
+.newscontain-row3{
+    margin: 50px auto 100px auto;
+    text-align: center;
+    color: #FFF;
+    width: 200px;
+    padding: 15px 0;
+    background-color: #337ab7;
+    border-radius: 5px;
+}
+.bottom-img{
+    background: url("../img/banner01.jpg") no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 400px;
+}
+.bottom-bg{
+    background-color: rgba(0,0,0,0.5);
+    width: 100%;
+    height: 400px;
+}
+.bottom-content{
+    width: 800px;
+    height: 400px;
+    color: #FFF;
+    margin: 0 auto;
+    text-align: center;
+}
+.bottom-row1{
+    margin-top: 100px;
+}
+.bottom-row2{
+    width: 40px;
+    height: 30px;
+    border-bottom: 5px solid #FFF;
+    margin: 0 auto;
+}
+.bottom-row3{
+    font-weight: bold;
+    margin-top: 30px;
+    font-size: 22px;
+}
+.bottom-row4{
+    font-size: 12px;
+    margin-top: 20px;
+}
+/**
+-----------------------联系我们--------------------------
+ */
+.contactwe{
+    width: 100%;
+    height: 650px;
+}
+.contactwe-person{
+    color: #666;
+    width: 360px;
+    font-size: 16px;
+    font-weight: 700;
+    float: left;
+}
+.contactwe-person div span{
+    font-size: 20px;
+    color: #515151;
+ }
+.contactwe-person div{
+    margin-bottom: 20px;
+}
+.contactwe-lastrow{
+    margin-top: 50px;
+}
+.contactwe-info{
+    width: 630px;
+    height: 400px;
+    float: left;
+}
+.contactwe-info input[type="text"],.contactwe-info input[type="email"]{
+    height: 30px;
+    border: 1px solid #E8E8E8;
+    padding: 8px 14px;
+    width: 275px;
+    margin-bottom: 34px;
+}
+.contactwe-info input[type="text"]{
+    margin-right: 13px;
+}
+.contactwe-info input[type="submit"]{
+    background-color: #333;
+    border-radius: 0;
+    border: 0;
+    color: #fff;
+    padding: 8px 18px;
+}
+.contactwe-info textarea{
+    height: 240px;
+    border: 1px solid #E8E8E8;
+    padding: 14px 14px;
+    width: 600px;
+    margin-bottom: 30px;
+}
+.contactwe-body{
+}
+
+.bottom-info{
+    margin-top: 150px;
+    background-color: #262626;
+    width: 100%;
+    color: rgba(255,255,255,0.4);
+}
+.bottom-contain{
+    text-align: center;
+    font-size: 12px;
+    padding: 18px 0;
+}

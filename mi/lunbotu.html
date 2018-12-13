@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+
+    </script>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        ol,li{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        i{
+            font-style: normal;
+        }
+        .imgbanner{
+            width: 100%;
+            position: relative;
+            overflow: hidden;
+            height: 560px;
+        }
+        .mapimg{
+            position: absolute;
+            width: 100%;
+            z-index: 1;
+        }
+        .mapimg:after{
+            content: "";
+            clear: both;
+        }
+        .mapimg ol{
+            width:400%;
+        }
+        .mapimg ol li{
+            float: left;
+            width: 25%;
+            height: 560px;
+
+        }
+        .mapimg ol li img{
+            width: 100%;
+            height: 560px;
+        }
+        .imgol{
+
+        }
+        .imgbtn{
+
+        }
+        .imgbtn i{
+            background-color: #fff;
+            color: #000;
+            font-size: 32px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            width: 40px;
+            opacity: 0.2;
+            cursor: pointer;
+            z-index: 2;
+        }
+        .ileft{
+            position: absolute;
+            top:50%;
+            transform: translate(0,-50%);
+        }
+        .iright{
+            position: absolute;
+            top:50%;
+            right: 0;
+            transform: translate(0,-50%);
+        }
+    </style>
+</head>
+<body>
+<div class="imgbanner">
+    <div class="mapimg" id="mapimg">
+        <ol class="imgol" >
+            <li class="imgli" style="background:url('img/banner01.jpg') no-repeat center;background-size: cover;"></li>
+            <li class="imgli" style="background:url('img/banner02.jpg') no-repeat center;background-size: cover;"></li>
+            <li class="imgli" style="background:url('img/banner03.jpg') no-repeat center;background-size: cover;"></li>
+            <li class="imgli" style="background:url('img/banner04.jpg') no-repeat center;background-size: cover;"></li>
+        </ol>
+    </div>
+    <div class="imgbtn">
+        <i class="ileft" onclick="imgleft()">&lt;</i><i class="iright" onclick="imgright()">&gt;</i>
+    </div>
+</div>
+
+<script>
+    var i=0
+    function imgright(){
+        var lis = document.getElementsByClassName("imgli");
+        if(i==lis.length-1){
+            i=0;
+        }else {
+            i = i + 1;
+        }
+        var imgcontain = document.getElementById("mapimg");
+        imgcontain.style.left=-i*100+"%";
+    }
+    function imgleft(){
+        var lis = document.getElementsByClassName("imgli");
+        if(i==0){
+            i=lis.length;
+        }
+        i=i-1;
+        var imgcontain = document.getElementById("mapimg");
+        imgcontain.style.left=-i*100+"%";
+    }
+    setInterval(imgright,2500);
+
+</script>
+</body>
+
+
+</html>

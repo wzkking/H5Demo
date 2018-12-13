@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        .div{
+            width: 100px;
+            height: 100px;
+            background-color: #83c44e;
+            margin: 200px auto 0 auto;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            animation:myfirst 2s;
+        }
+        @-webkit-keyframes myfirst /* Safari and Chrome */
+        {
+            from {-webkit-transform:translateX(0px) rotate(0deg);}
+            to {-webkit-transform:translateX(300px) rotate(360deg);}
+        }
+
+    </style>
+
+</head>
+<body>
+<div class="div">
+CCCCCCCCCCCC
+</div>
+<script>
+setTimeout(function () {
+    var div = document.getElementsByClassName("div")[0];
+    // div.style.transitionDuration="2s";
+    // div.style.width="300px";
+    // div.style.height="300px";
+    // div.style.transform="rotate(360deg) ";
+},1000)
+</script>
+</body>
+</html>
