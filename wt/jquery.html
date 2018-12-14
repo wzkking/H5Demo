@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".div1").click(function () {
+                // $(".div2").toggle();
+                // $(".div2").fadeToggle();
+                $(".div3").animate({
+                    // marginLeft:'-500px'
+                    translationX:'-500px'
+                },3000,shows());
+            });
+        })
+
+        function shows(){
+            setTimeout(function () {
+                console.log("1111111");
+            },3000)
+
+        }
+
+    </script>
+    <style type="text/css">
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        div{
+            width: 200px;
+            border: 1px solid #414141;
+        }
+        .div2{
+            height: 200px;
+            display: none;
+        }
+        .div3{
+            width: 500px;
+            height: 100px;
+            background-color: #83c44e;
+        }
+    </style>
+</head>
+<body>
+<div class="div1" id="div1">点击</div>
+<div class="div2" id="div2">加速度快了福建省得了会计分录可视对讲傅雷家书丽枫酒店睡懒觉了开发</div>
+<div class="div3"></div>
+</body>
+</html>
