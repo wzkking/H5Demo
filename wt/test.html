@@ -8,66 +8,82 @@
             margin: 0;
             padding: 0;
         }
-        .div{
-            width: 100px;
-            height: 100px;
-            background-color: #83c44e;
-            margin: 200px auto 0 auto;
+        .div1{
+            width: 360px;
+            height: 270px;
+            background: url("img/copyright/000.jpg") no-repeat;
+            background-size: 100% 100%;
+            position: relative;
+        }
+        .div2{
+            position: absolute;
+            width: 50%;
+            height: 50%;
+            background:rgba(0,0,0,0.8);
+            color: #FFF;
+            margin: auto;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+        }
+        .title{
+            font-weight: bolder;
+            font-size: 16px;
+        }
+        .content{
+            font-size: 12px;
             overflow: hidden;
-            text-overflow: ellipsis;
-            animation:myfirst 2s;
         }
-        @-webkit-keyframes myfirst /* Safari and Chrome */
-        {
-            from {-webkit-transform:translateX(0px) rotate(0deg);}
-            to {-webkit-transform:translateX(300px) rotate(360deg);}
-        }
+
 
     </style>
 
+    <script src="js/jquery.min.js"></script>
 </head>
 <body>
-<div id=demo style=overflow:hidden;height:110px;width:955px;color:#ffffff>
-    <table align=left cellpadding=0 cellspace=0 border=0><tr><td id=demo1 valign=top>
-        <a href="http://www.yicas.cn/dct/page/65651"><strong><img width="77" height="107" alt="" src="http://159.226.11.94/clb/getCachedDocument.do?docid=687" /></strong></a>
-        <a href="http://www.yicas.cn/dct/page/65744"><strong><img width="77" height="107" alt="" src="http://159.226.11.94/clb/getCachedDocument.do?docid=779" /></strong></a>
-        <a href="http://www.yicas.cn/dct/page/65607"><strong><img width="77" height="107" alt="" src="http://159.226.11.94/clb/getCachedDocument.do?docid=603" /></strong></a>
-        <a href="http://www.yicas.cn/dct/page/65913"><strong><img width="77" height="107" alt="" src="http://159.226.11.94/clb/getCachedDocument.do?docid=903" /></strong></a>
-        <a href="http://www.yicas.cn/dct/page/65743"><strong><img width="77" height="107" alt="" src="http://159.226.11.94/clb/getCachedDocument.do?docid=777" /></strong></a>
-        <a href="http://www.yicas.cn/dct/page/65606"><strong><img width="77" height="107" alt="" src="http://159.226.11.94/clb/getCachedDocument.do?docid=599" /></strong></a>
-        <a href="http://www.yicas.cn/dct/page/66148"><strong><img width="77" height="107" alt="" src="http://159.226.11.94/clb/getCachedDocument.do?docid=1141" /></strong></a>
-        <a href="http://www.yicas.cn/dct/page/66154"><strong><img width="77" height="107" alt="" src="http://159.226.11.94/clb/getCachedDocument.do?docid=1147" /></strong></a>
-        <a href="http://www.yicas.cn/dct/page/65624"><strong><img width="77" height="107" alt="" src="http://159.226.11.94/clb/getCachedDocument.do?docid=662" /></strong></a>
-        <a href="http://www.yicas.cn/dct/page/66034"><strong><img width="77" height="107" alt="" src="http://159.226.11.94/clb/getCachedDocument.do?docid=1029" /></strong></a>
-        <a href="http://www.yicas.cn/dct/page/66050"><strong><img width="77" height="107" alt="" src="http://159.226.11.94/clb/getCachedDocument.do?docid=1045" /></strong></a>
-    </td>
-        <td id=demo2 valign=top></td>
-        <td id=demo3 valign=top></td>
-        <td id=demo4 valign=top></td>
-        <td id=demo5 valign=top></td>
-        <td id=demo6 valign=top></td>
-    </tr>
-    </table>
+<div class="div1">
+    <div class="div2">
+        <div class="title">《元尊》</div>
+        <div class="content">气运之争，蟒雀吞龙。究竟是蟒雀为尊，还是圣龙崛起，凌驾众生？一个气掌乾坤的世界，一气可搬山可倒海，可翻天，可掌阴阳乾坤。吾有一口玄黄气，可吞天地日月星。</div>
+    </div>
 </div>
-
+<div class="div1">
+    <div class="div2">
+        &nbsp;
+        <div class="title">《元尊》</div>
+        <div class="content">气运之争，蟒雀吞龙。究竟是蟒雀为尊，还是圣龙崛起，凌驾众生？一个气掌乾坤的世界，一气可搬山可倒海，可翻天，可掌阴阳乾坤。吾有一口玄黄气，可吞天地日月星。</div>
+    </div>
+</div>
+<div class="div1">
+    <div class="div2">
+        <div class="title">《元尊》</div>
+        <div class="content">气运之争，蟒雀吞龙。究竟是蟒雀为尊，还是圣龙崛起，凌驾众生？一个气掌乾坤的世界，一气可搬山可倒海，可翻天，可掌阴阳乾坤。吾有一口玄黄气，可吞天地日月星。</div>
+    </div>
+</div>
 <script>
-    var speed=30
-    demo2.innerHTML=demo1.innerHTML;
-    demo3.innerHTML=demo1.innerHTML;
-    demo4.innerHTML=demo1.innerHTML;
-    demo5.innerHTML=demo1.innerHTML;
-    demo6.innerHTML=demo1.innerHTML ;
-    function Marquee(){
-        if(demo6.offsetWidth-demo.scrollLeft<=0)
-            demo.scrollLeft-=demo1.offsetWidth
-        else{
-            demo.scrollLeft++
-        }
+    var div = $(".div1");
+    for(var i=0;i<div.length;i++){
+        msover(i);
     }
-    var MyMar=setInterval(Marquee,speed)
-    demo.onmouseover=function() {clearInterval(MyMar)}
-    demo.onmouseout=function() {MyMar=setInterval(Marquee,speed)}
-</script>
 
+    function msover(ind) {
+        var div2 = $(".div2");
+        var title = $(".title");
+        var content = $(".content");
+        div[i].onmouseover=function () {
+            div2[ind].style.width="100%";
+            div2[ind].style.height="100%";
+            title[ind].style.marginTop="70px";
+            title[ind].style.marginLeft="30px";
+            content[ind].style.margin="10px 30px 0 30px";
+            div2[ind].style.transitionDuration="1s";
+            div2[ind].style.transition="1s";
+            title[ind].style.transition="1s";
+            content[ind].style.transition="1s";
+        }
+
+    }
+</script>
 </body>
 </html>
